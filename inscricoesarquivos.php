@@ -134,10 +134,21 @@
                     
                     if($arquivoNovo[sizeof($arquivoNovo)-1] != 'pdf')
                     {
-                    die('Você não pode fazer upload desse arquivo.');
+                    echo '
+                    <div class="card-body">
+                    <div class="alert alert-danger">
+                    <span><b> Erro no formato do arquivo, </b> <p>Submeter Arquivo .pdf!</p>
+                    <a href="./inscricoesarquivos.php"><button type="button" class="btn btn-light"> ENVIAR ARQUIVO NOVAMENTE!!</button></a></span>
+                    </div>
+                    </div>';
                     }else
                     {
-                    echo 'Upload feito com sucesso!';
+                    echo '
+                    <div class="card-body">
+                    <div class="alert alert-success">
+                    <span><b> <p>Arquivo 1 enviado com sucesso! </p></b>
+                    </div>
+                    </div>';
                     move_uploaded_file($arquivo['tmp_name'],'uploads/'.$arquivo['name']);
                     }
                     
@@ -159,15 +170,22 @@
                     
                     if($arquivoNovo[sizeof($arquivoNovo)-1] != 'pdf')
                     {
-                    die('Você não pode fazer upload desse arquivo.');
+                    echo '
+                    <div class="card-body">
+                    <div class="alert alert-danger">
+                    <span><b> Erro no formato do arquivo, </b> <p>Submeter Arquivo .pdf!</p>
+                    <a href="./inscricoesarquivos.php"><button type="button" class="btn btn-light"> ENVIAR ARQUIVO NOVAMENTE!</button></a></span>
+                    </div>
+                    </div>';
                     }else
                     {
                     echo '
                     <div class="card-body">
-                    <div class="alert alert-success">
-                    <span><b> Parabéns, </b> <p>você concluiu o seu cadastro com sucesso!</p>
-                    <a href="./index.php"><button type="button" class="btn btn-light"> VOLTAR PARA O SITE DO PROCEEM!</button></a></span>
-                    </div>
+                        <div class="alert alert-success">
+                            <span><b><p>Arquivo 2 enviado com sucesso!</p></b>
+                            <span><b> Parabéns, </b> <p>você concluiu o seu cadastro com sucesso!</p>
+                            <a href="./index.php"><button type="button" class="btn btn-light"> VOLTAR PARA O SITE DO PROCEEM!</button></a></span>
+                        </div>
                     </div>';
                     move_uploaded_file($arquivo['tmp_name'],'uploads/'.$arquivo['name']);
                     }

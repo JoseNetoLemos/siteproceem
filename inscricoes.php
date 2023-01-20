@@ -1,7 +1,6 @@
 <?php
     require_once 'php/conexao.php';
     $u = new Conexao;
-
     $db="id20028861_proceem";
     $host="localhost";
     $user="id20028861_proceemufrn";
@@ -110,6 +109,14 @@
                 <div class="card-body">
                   <h5 class="card-title">PROCESSO SELETIVO PARA ESTUDANTES 2023</h5>
                   <h5 class="card-title">DADOS DO ESTUDANTE</h5>
+                  <p><strong>Atenção:</strong> Antes de realizar a inscrição, verifique se você possui os arquivos de todos os documentos necessários. Isso inclui:</p>
+                  <ul>
+                      <li>Histórico Acadêmico;</li>
+                      <li>Comprovante Vacinal;</li>
+                  </ul>
+                  
+                  <p> Enviar documentos em formato PDF. </p>
+                  
     
 <!-- General Form Elements -->
                   
@@ -448,7 +455,7 @@ if (isset($_POST['nome'])){
                         </div>
                       </div>
                     </div>
-                    
+
                     <div class="row mb-3">
                       <label class="col-sm-2 col-form-label">Botão de envio</label>
                       <div class="col-sm-10">
