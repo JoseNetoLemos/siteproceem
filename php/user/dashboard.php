@@ -4,7 +4,7 @@ if(!isset($_SESSION)) session_start();
 
 if(!isset($_SESSION['id_usuario']))
 {
-	header("location: index.php");
+	header("location: ../../../index.php");
 	exit;
 }
 
@@ -86,7 +86,8 @@ if(!isset($_SESSION['id_usuario']))
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>INÍCIO</span></a></li>
+          <li><a href="dashboard.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>INÍCIO</span></a></li>
+          <li><a href="enviarredacao.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>ENVIAR REDAÇÃO</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -105,74 +106,203 @@ if(!isset($_SESSION['id_usuario']))
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-journal-bookmark-fill"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">PORTUGUÊS</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-chat-left-heart"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">LITERATURA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-journal-text"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">REDAÇÃO</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-         
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-radioactive"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">QUÍMICA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
+            
+            
+       <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/portugues.php">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                    <h1>       
+                                PORTUGUÊS
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/literatura.php
+">
+                        <i class="bi bi-chat-left-heart"></i>
+                    <h1>       
+                                LITERATURA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+           
+        </div>
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/redacao.php">
+                        <i class="bi bi-journal-text"></i>
+                    <h1>       
+                                REDAÇÃO
+                    </h1>
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+           
+        </div>
+        
+        
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/quimica.php">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                    <h1>       
+                                QUÍMICA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+           
+        </div>
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/fisica.php">
+                        <i class="bi bi-chat-left-heart"></i>
+                    <h1>       
+                                FÍSICA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/biologia.php">
+                        <i class="bi bi-journal-text"></i>
+                    <h1>       
+                                BIOLOGIA
+                    </h1>
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+        
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/historia.php">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                    <h1>       
+                                HISTÓRIA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-warning bg-warning border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/matematica.php
+">
+                        <i class="bi bi-chat-left-heart"></i>
+                    <h1>       
+                                MATEMÁTICA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/filosofia.php">
+                        <i class="bi bi-journal-text"></i>
+                    <h1>       
+                                FILOSOFIA
+                    </h1>
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+               <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/sociologia.php">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                    <h1>       
+                                SOCIOLOGIA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/geografia.php">
+                        <i class="bi bi-chat-left-heart"></i>
+                    <h1>       
+                                GEOGRAFIA
+                    </h1>
+                    
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
+
+        
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="80">
+           
+                <div class="alert alert-dark bg-dark text-light border-0 alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <a href="areaalunos/atualidades.php">
+                        <i class="bi bi-journal-text"></i>
+                    <h1>       
+                                ATUALIDADES
+                    </h1>
+                 </div>
+            
+            <h4 class="title"><a href=""></a></h4>
+            
+        </div>
           
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-magnet-fill"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">FÍSICA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-lungs-fill"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">BIOLOGIA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-hourglass-split"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">HISTÓRIA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-globe"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">GEOGRAFIA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-question-square"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">FILOSOFIA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-chat-right-text"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">SOCIOLOGIA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-plus-slash-minus"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">MATEMÁTICA</button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-chat-dots"></i></div>
-            <h4 class="title"><a href=""><button type="button" class="btn btn-primary btn-lg">ATUALIDADES</button></button></a></h4>
-            <p class="description"> - - - - </p>
-          </div>
           
         </div>
 

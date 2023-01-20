@@ -62,10 +62,10 @@
      <a href = "login.php">Login</a>
   </label>
   <label class="btn btn-secondary">
-     <a href = "cadastrar.php">Cadastro</a>
+     <a href = "login.php">Alunos</a>
   </label>
   <label class="btn btn-secondary">
-    <a href="#about">Sobre</a>
+    <a href="loginprofessor.php">Professores</a>
   </label>
 </div>
       
@@ -84,18 +84,28 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+
+  <main id="main">
+      
+      <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    
+<div class="d-flex align-items-center h-100">
+  <div class="mx-auto">
+
+    <div class="container">
+            <h1>PROCEEM UFRN</h1>
+      <p>O PROGRAMA ESTÁ HÁ MAIS DE 15 ANOS </br><span class="typed" data-typed-items="PREPARANDO, QUALIFICANDO, ORIENTANDO, E APROVANDO NO ENEM"></span></p>
     <div class="hero-container" data-aos="fade-in">
-      <h1>PROCEEM UFRN</h1>
-      <p>ESTAMOS HÁ MAIS DE 15 ANOS </br><span class="typed" data-typed-items="PREPARANDO, QUALIFICANDO, ORIENTANDO, E APROVANDO NO ENEM"></span></p>
-      <a href="./inscricoes.php"><button type="button" class="btn btn-light">INSCRIÇÕES 2023.1</button></a>
+      <a href="./inscricoes.php"><button type="button" class="btn btn-light">FAÇA AQUI A SUA INSCRIÇÃO 2023</button></a>
       <!--<a href="./login/login.html"></a><button type="button" class="btn btn-light">FAZER LOGIN</button></a> -->
+      </div>
     </div>
+  </div>
+</div>
     
   </section><!-- End Hero -->
 
-  <main id="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -292,35 +302,35 @@ Para participar, é preciso estar cursando o 3º ano do ensino médio ou ter con
             <div class="progress">
               <span class="skill">Literatura <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Redação <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Química <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Física <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Biologia <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -331,42 +341,42 @@ Para participar, é preciso estar cursando o 3º ano do ensino médio ou ter con
             <div class="progress">
               <span class="skill">História <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Geografia <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Filosofia <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Sociologia <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Matemática <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">Conhecimentos Gerais <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
