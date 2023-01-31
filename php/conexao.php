@@ -75,8 +75,10 @@ public $msgErro = "";
             $sql->execute();
             if($sql->rowCount() > 0)
             {
+               
             	$dado = $sql->fetch();
             	$_SESSION['id_usuario'] = $dado['id_usuario'];
+            	
             return true;
             }
             else
@@ -124,6 +126,33 @@ public $msgErro = "";
         
     }
     
+    public function cadastrarredacaocorrigida($nome, $email, $tema, $texto, $fk_redacaocorrigida){
+    global $pdo;
+    
+    
+    try {
+        $sql = $pdo->prepare("INSERT INTO redacaocorrigida (nome, email, tema, texto, fk_redacaocorrigida) VALUES (:a, :b, :c, :d, :e)");
+        $sql->bindValue(":a", $nome);
+        $sql->bindValue(":b", $email);
+        $sql->bindValue(":c", $tema);
+        $sql->bindValue(":d", $texto);
+        $sql->bindValue(":e", $fk_redacaocorrigida);
+        $sql->execute();    
+        
+        $sql = $pdo->prepare("DELETE FROM redacoes ORDER BY id_redacao DESC LIMIT 1");
+        $sql->execute();
+        return true;
+        
+        
+        
+        } catch (PDOException $e) {
+            echo "Erro ao deletar a linha: " . $e->getMessage();
+            return false;
+        }
+        
+    }
+
+    
     public function cadastrarportugues($nome, $email, $tema, $texto, $fk_portugues){
 
     global $pdo;
@@ -135,9 +164,9 @@ public $msgErro = "";
         $sql->bindValue(":c", $tema);
         $sql->bindValue(":d", $texto);
         $sql->bindValue(":e", $fk_portugues);
-        $sql->execute();    
+        $sql->execute();   
         return true;
-        
+
     }
     
     public function cadastrarliteratura($nome, $email, $tema, $texto, $fk_literatura){

@@ -86,7 +86,7 @@ if(!isset($_SESSION['id_usuario_professor']))
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="dashboard.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>INÍCIO</span></a></li>
+          <li><a href="dashboardprofessores.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>INÍCIO</span></a></li>
           <li><a href="enviarredacao.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>ENVIAR REDAÇÃO</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->

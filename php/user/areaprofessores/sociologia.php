@@ -141,6 +141,7 @@ if(!isset($_SESSION['id_usuario_professor']))
         <ul>
           <li><a href="../dashboardprofessores.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>DISCIPLINAS</span></a></li>
         </ul>
+        
       </nav><!-- .nav-menu -->
     </div>
     
@@ -159,6 +160,7 @@ if(!isset($_SESSION['id_usuario_professor']))
           
        
         </ol>
+        <button class="btn btn-dark"><a href="publicacoes/sociologia.php">VIZUALIZAR PUBLICAÇÕES</a></button>
       </nav>
     </div><!-- End Page Title -->
 

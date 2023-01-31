@@ -1,5 +1,3 @@
-
-
 <?php 
 
 if(!isset($_SESSION)) session_start();
@@ -137,12 +135,11 @@ if(!isset($_SESSION['id_usuario_professor']))
   </label>
 </div>
       
-
-
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="../dashboardprofessores.php" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>DISCIPLINAS</span></a></li>
         </ul>
+        
       </nav><!-- .nav-menu -->
     </div>
     
@@ -158,9 +155,8 @@ if(!isset($_SESSION['id_usuario_professor']))
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../dashboardprofessores.php">Disciplinas</a></li>
-          
-       
         </ol>
+        <button class="btn btn-dark"><a href="publicacoes/atualidades.php">VIZUALIZAR PUBLICAÇÕES</a></button>
       </nav>
     </div><!-- End Page Title -->
 
